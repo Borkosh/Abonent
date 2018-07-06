@@ -3,7 +3,7 @@ import java.awt.event.ActionListener;
 
 public class Controller implements ActionListener {
     View view;
-    Model model;
+    private Model model;
     public Controller(View view) {
         model = new Model(view);
         this.view=view;
@@ -23,5 +23,7 @@ public class Controller implements ActionListener {
         }
 
     }
-
+    public Model getLinkModel(){
+        return model;
+    }
 }

@@ -63,5 +63,8 @@ public class Autorization {
     public String getPassword(){
         return textPassword.getText();
     }
+    public void setVisible(Boolean value){
+        login.setVisible(value);
+    }
 
 }
